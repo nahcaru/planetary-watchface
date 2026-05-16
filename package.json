@@ -1,0 +1,13 @@
+{
+  "name": "planetary-watchface",
+  "version": "1.0.0",
+  "description": "Amazfit Balance watch face — planet of the day",
+  "scripts": {
+    "dev": "zeus dev",
+    "build": "zeus build",
+    "download-assets": "uv run scripts/download_planets.py"
+  },
+  "devDependencies": {
+    "@zeppos/zeus-cli": "latest"
+  }
+}
