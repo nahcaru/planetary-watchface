@@ -12,7 +12,9 @@
     "vender": "zepp",
     "description": "Planet of the day watch face for Amazfit Balance"
   },
-  "permissions": [],
+  "permissions": [
+    "data:user.hd.step"
+  ],
   "runtime": {
     "apiVersion": {
       "compatible": "2.0.0",
