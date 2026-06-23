@@ -73,9 +73,24 @@ function updateWatchFace() {
     const textWidth = pctStr.length * charWidth;
     const iconX = RIGHT_X - textWidth - 36; // 20px battery width + 16px gap
 
-    batteryOutline.setProperty(prop.MORE, { x: iconX });
-    batteryMask.setProperty(prop.MORE, { x: iconX + 2 });
-    batteryCap.setProperty(prop.MORE, { x: iconX + 18 });
+    batteryOutline.setProperty(prop.MORE, {
+      x: iconX,
+      y: 286,
+      w: 18,
+      h: 12,
+    });
+    batteryMask.setProperty(prop.MORE, {
+      x: iconX + 2,
+      y: 288,
+      w: 14,
+      h: 8,
+    });
+    batteryCap.setProperty(prop.MORE, {
+      x: iconX + 18,
+      y: 289,
+      w: 2,
+      h: 6,
+    });
 
     const maxBarWidth = 14;
     const barWidth = Math.round(maxBarWidth * (pct / 100));
@@ -90,7 +105,9 @@ function updateWatchFace() {
 
     batteryLevelRect.setProperty(prop.MORE, {
       x: iconX + 2,
+      y: 288,
       w: finalBarWidth,
+      h: 8,
       color: barColor,
     });
   }
